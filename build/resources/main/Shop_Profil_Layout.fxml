@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ControllerProfil">
+   <children>
+      <Button fx:id="BellungsButton" layoutX="539.0" layoutY="77.0" mnemonicParsing="false" onAction="#Bestellungslink" prefHeight="44.0" prefWidth="117.0" text="Bestellungen" />
+      <Button fx:id="ChatButton" layoutX="669.0" layoutY="77.0" mnemonicParsing="false" onAction="#ChatLink" prefHeight="44.0" prefWidth="117.0" text="Chat" />
+      <Button fx:id="id_suche" layoutX="149.0" layoutY="77.0" mnemonicParsing="false" onAction="#searchButtonHandleAction" prefHeight="44.0" prefWidth="117.0" text="Suche" />
+      <Button fx:id="id_profil" layoutX="276.0" layoutY="77.0" mnemonicParsing="false" onAction="#profilButtonHandleAction" prefHeight="44.0" prefWidth="117.0" text="Profil" />
+      <Button fx:id="id_wallet" layoutX="408.0" layoutY="77.0" mnemonicParsing="false" onAction="#walletButtonHandleAction" prefHeight="44.0" prefWidth="117.0" text="Wallet" />
+      <Button fx:id="HomeButton" layoutX="20.0" layoutY="77.0" mnemonicParsing="false" onAction="#HomeClick" prefHeight="44.0" prefWidth="117.0" text="Home" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="52.0" prefWidth="157.0" text="SEP SHOP">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutY="131.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="131.0" />
+      <Separator layoutY="131.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="131.0" />
+      <TextField fx:id="BenutzernameField" layoutX="201.0" layoutY="223.0" />
+      <TextField fx:id="PasswortField" layoutX="201.0" layoutY="259.0" />
+      <TextField fx:id="EmailField" layoutX="201.0" layoutY="293.0" />
+      <TextField fx:id="StrasseField" layoutX="200.0" layoutY="328.0" />
+      <TextField fx:id="PLZField" layoutX="201.0" layoutY="434.0" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="154.0" prefHeight="52.0" prefWidth="76.0" text="Profil">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="500.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="61.0" layoutY="219.0" prefHeight="35.0" prefWidth="130.0" text="Benutzername">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="254.0" prefHeight="35.0" prefWidth="130.0" text="Passwort">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="288.0" prefHeight="35.0" prefWidth="130.0" text="E-Mail">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="323.0" prefHeight="35.0" prefWidth="130.0" text="Straße:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="358.0" prefHeight="35.0" prefWidth="130.0" text="Hausnummer:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="429.0" prefHeight="35.0" prefWidth="130.0" text="Postleitzahl">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Profil_Abbrechen_Button" layoutX="372.0" layoutY="519.0" mnemonicParsing="false" onAction="#ProfilAbbrechenFunktion" text="Abrechen">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Profil_Aenderungen_Button" layoutX="536.0" layoutY="519.0" mnemonicParsing="false" onAction="#ProfilAenderungenFunktion" text="Änderungen übernehmen">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="414.0" layoutY="164.0" prefHeight="35.0" prefWidth="130.0" text="Profilbild">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="422.0" layoutY="475.0" text="Gewerbename">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="GNameField" layoutX="576.0" layoutY="476.0" />
+      <ImageView fx:id="Profilbild" fitHeight="247.0" fitWidth="200.0" layoutX="474.0" layoutY="209.0" onDragDetected="#ProfilbildClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PB_Leer.png" />
+         </image></ImageView>
+      <Label layoutX="60.0" layoutY="394.0" text="Stadt:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="475.0" text="Land:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NRField" layoutX="200.0" layoutY="363.0" />
+      <TextField fx:id="StadtField" layoutX="200.0" layoutY="395.0" />
+      <TextField fx:id="LandField" layoutX="200.0" layoutY="476.0" />
+      <Button fx:id="Tx_Bestellung" layoutX="58.0" layoutY="519.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="291.0" text="Bestellungen">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

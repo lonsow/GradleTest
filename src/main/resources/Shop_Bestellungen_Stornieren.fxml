@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ControllerBestellungenStornieren">
+   <children>
+      <Label layoutX="14.0" layoutY="69.0" prefHeight="19.0" prefWidth="151.0" text="Möchten sie das Produkt:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="Produktname" layoutX="169.0" layoutY="69.0" prefHeight="19.0" prefWidth="129.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="69.0" prefHeight="17.0" prefWidth="89.0" text="  stornieren">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="JaButton" layoutX="25.0" layoutY="147.0" mnemonicParsing="false" onAction="#Bestaetigen" prefHeight="25.0" prefWidth="89.0" text="Stornieren" />
+      <Button fx:id="AbbrechenButton" layoutX="298.0" layoutY="536.0" mnemonicParsing="false" onAction="#Abbrechen" prefHeight="42.0" prefWidth="166.0" text="Abbrechen" />
+      <Label layoutX="90.0" layoutY="110.0" prefHeight="19.0" prefWidth="243.0" text="werden ihrer Wallet gutgeschrieben">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="Produktpreis" layoutX="24.0" layoutY="111.0" prefHeight="17.0" prefWidth="45.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="272.0" layoutY="14.0" prefHeight="31.0" prefWidth="256.0" text="Weitere Optionen">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="261.0" prefHeight="19.0" prefWidth="256.0" text="Möchten sie das Produkt bewerten:" />
+      <TextField fx:id="bewertungsfeld" layoutX="14.0" layoutY="345.0" prefHeight="119.0" prefWidth="323.0" />
+      <Slider fx:id="zahlenrating" blockIncrement="1.0" layoutX="20.0" layoutY="289.0" majorTickUnit="1.0" max="5.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Button fx:id="bewertenbutton" layoutX="14.0" layoutY="477.0" mnemonicParsing="false" onAction="#bewerten" prefHeight="42.0" prefWidth="166.0" text="Bewerten" />
+   </children>
+</AnchorPane>

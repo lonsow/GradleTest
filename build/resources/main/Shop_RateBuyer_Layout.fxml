@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ControllerShopRateBuyer">
+    <TextField fx:id="bewertungsfeld" layoutX="36.0" layoutY="368.0" prefHeight="119.0" prefWidth="323.0" />
+    <Slider fx:id="zahlenrating" blockIncrement="1.0" layoutX="36.0" layoutY="307.0" majorTickUnit="1.0" max="5.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+    <Button fx:id="bewertenbutton" layoutX="37.0" layoutY="531.0" mnemonicParsing="false" onAction="#bewerten" prefHeight="42.0" prefWidth="166.0" text="Bewerten" />
+   <Label layoutX="22.0" layoutY="79.0" text="Name des Käufers:">
+      <font>
+         <Font size="16.0" />
+      </font></Label>
+   <Label fx:id="BuyerLabel" layoutX="182.0" layoutY="79.0" prefHeight="25.0" prefWidth="31.0">
+      <font>
+         <Font size="16.0" />
+      </font></Label>
+   <Label layoutX="21.0" layoutY="169.0" text="Gekauftes Produkt:">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Label fx:id="Productname" layoutX="188.0" layoutY="169.0" prefHeight="25.0" prefWidth="20.0">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Button fx:id="AbbrechenB" layoutX="307.0" layoutY="531.0" mnemonicParsing="false" onAction="#abbrechen" prefHeight="42.0" prefWidth="172.0" text="Abbrechen" />
+
+</AnchorPane>

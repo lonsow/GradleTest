@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="835.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ControllerStartseite">
+   <children>
+      <Canvas height="131.0" layoutY="4.0" width="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0" />
+      <Button fx:id="BellungsButton" layoutX="539.0" layoutY="77.0" mnemonicParsing="false" onAction="#Bestellungslink" prefHeight="44.0" prefWidth="117.0" text="Bestellungen" />
+      <Button fx:id="ChatButton" layoutX="669.0" layoutY="77.0" mnemonicParsing="false" onAction="#ChatLink" prefHeight="44.0" prefWidth="117.0" text="Chat" />
+      <Button fx:id="id_suche" layoutX="149.0" layoutY="77.0" mnemonicParsing="false" onAction="#searchButtonHandleAction" prefHeight="44.0" prefWidth="117.0" text="Suche" />
+      <Button fx:id="id_profil" layoutX="276.0" layoutY="77.0" mnemonicParsing="false" onAction="#profilButtonHandleAction" prefHeight="44.0" prefWidth="117.0" text="Profil" />
+      <Button fx:id="id_wallet" layoutX="408.0" layoutY="77.0" mnemonicParsing="false" onAction="#walletButtonHandleAction" prefHeight="44.0" prefWidth="117.0" text="Wallet" />
+      <Button fx:id="HomeButton" layoutX="20.0" layoutY="77.0" mnemonicParsing="false" onAction="#HomeClick" prefHeight="44.0" prefWidth="117.0" text="Home" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="52.0" prefWidth="157.0" text="SEP SHOP">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutY="131.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="131.0" />
+
+
+      <ListView fx:id="items_list" layoutX="82.0" layoutY="187.0" prefHeight="131.0" prefWidth="658.0" />
+      <Label layoutX="100.0" layoutY="159.0" prefHeight="17.0" prefWidth="231.0" text="Zuletzt angesehenen Produkte">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <ListView fx:id="gebote_listview" layoutX="82.0" layoutY="369.0" prefHeight="131.0" prefWidth="658.0" />
+      <Label layoutX="100.0" layoutY="344.0" prefHeight="17.0" prefWidth="102.0" text="Ihre Gebote ">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <ListView fx:id="eigenauktion_Listview" layoutX="85.0" layoutY="542.0" prefHeight="105.0" prefWidth="658.0" />
+      <Label layoutX="100.0" layoutY="516.0" prefHeight="17.0" prefWidth="114.0" text="Ihre Auktionen">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <ListView fx:id="gemerkteAuction_Listview" layoutX="80.0" layoutY="697.0" prefHeight="105.0" prefWidth="666.0" />
+      <Label fx:id="notice" layoutX="93.0" layoutY="665.0" prefHeight="17.0" prefWidth="157.0" text="Gemerkte Auktionen">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

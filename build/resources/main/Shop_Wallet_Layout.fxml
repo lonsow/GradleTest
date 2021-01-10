@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ControllerWallet">
+   <children>
+      <Canvas height="131.0" layoutY="4.0" width="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0" />
+      <Button fx:id="BellungsButton" layoutX="539.0" layoutY="77.0" mnemonicParsing="false" onAction="#Bestellungslink" prefHeight="44.0" prefWidth="117.0" text="Bestellungen" />
+      <Button fx:id="ChatButton" layoutX="669.0" layoutY="77.0" mnemonicParsing="false" onAction="#ChatLink" prefHeight="44.0" prefWidth="117.0" text="Chat" />
+      <Button fx:id="id_suche" layoutX="149.0" layoutY="77.0" mnemonicParsing="false" onAction="#searchButtonHandleAction" prefHeight="44.0" prefWidth="117.0" text="Suche" />
+      <Button fx:id="id_profil" layoutX="276.0" layoutY="77.0" mnemonicParsing="false" onAction="#profilButtonHandleAction" prefHeight="44.0" prefWidth="117.0" text="Profil" />
+      <Button fx:id="id_wallet" layoutX="408.0" layoutY="77.0" mnemonicParsing="false" onAction="#walletButtonHandleAction" prefHeight="44.0" prefWidth="117.0" text="Wallet" />
+      <Button fx:id="HomeButton" layoutX="20.0" layoutY="77.0" mnemonicParsing="false" onAction="#HomeClick" prefHeight="44.0" prefWidth="117.0" text="Home" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="52.0" prefWidth="157.0" text="SEP SHOP">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutY="131.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="131.0" />
+      <Separator layoutY="131.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="131.0" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="150.0" prefHeight="52.0" prefWidth="89.0" text="Wallet" AnchorPane.leftAnchor="40.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="50.0" layoutY="253.0" prefHeight="35.0" prefWidth="132.0" text="Ihr Guthaben:" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="WalletGuthabenAufladen" layoutX="50.0" layoutY="332.0" mnemonicParsing="false" onAction="#WalletGuthabenLadenButton" text="Guthaben aufladen" AnchorPane.rightAnchor="574.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="KontostandField" disable="true" layoutX="185.0" layoutY="258.0" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ControllerAngeboteneProdukte">
+   <children>
+      <Label layoutX="23.0" layoutY="14.0" text="Ihre eingestellten Produkte">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Backbutton" layoutX="402.0" layoutY="348.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="174.0" text="Zurück" />
+      <ListView fx:id="PName" layoutX="31.0" layoutY="50.0" prefHeight="200.0" prefWidth="131.0" />
+      <ListView fx:id="PPrice" layoutX="164.0" layoutY="50.0" prefHeight="200.0" prefWidth="121.0" />
+      <ListView fx:id="PBuyingUser" layoutX="285.0" layoutY="50.0" onMouseClicked="#rateBuyer" prefHeight="200.0" prefWidth="131.0" />
+   </children>
+</AnchorPane>

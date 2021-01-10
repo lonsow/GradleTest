@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ControllerRegistrierung">
+   <children>
+      <Label layoutX="282.0" layoutY="39.0" text="SEP-Registrierung">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="181.0" text="Passwort:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="226.0" text="Email:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="492.0" text="Gewerbename:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="GKButton" layoutX="203.0" layoutY="469.0" mnemonicParsing="false" onAction="#GKAction" text="Ich bin ein Gewerbekunde" />
+      <TextField fx:id="PWField" layoutX="208.0" layoutY="181.0" />
+      <TextField fx:id="EmailField" layoutX="208.0" layoutY="226.0" />
+      <TextField fx:id="gNameField" disable="true" layoutX="208.0" layoutY="492.0" />
+      <Button fx:id="okReg" layoutX="643.0" layoutY="516.0" mnemonicParsing="false" onAction="#okAction" text="Registrieren">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="abbrReg" layoutX="519.0" layoutY="516.0" mnemonicParsing="false" onAction="#abbrAction" text="Abbrechen">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="452.0" layoutY="138.0" text="Profilbild:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      
+      <Label layoutX="61.0" layoutY="138.0" text="Nutzername:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="uNameField" layoutX="208.0" layoutY="138.0" />
+      <TextField fx:id="StrasseField" layoutX="208.0" layoutY="276.0" />
+      <TextField fx:id="PLZField" layoutX="208.0" layoutY="364.0" />
+      <Label layoutX="60.0" layoutY="276.0" text="Straße:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="364.0" text="PLZ:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="bildview" fitHeight="251.0" fitWidth="200.0" layoutX="486.0" layoutY="193.0" onDragDetected="#bildClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PB_Leer.png" />
+         </image></ImageView>
+      <Label layoutX="60.0" layoutY="319.0" text="Hausnummer:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="402.0" text="Stadt:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="440.0" text="Land:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="HausnummerField" layoutX="208.0" layoutY="319.0" />
+      <TextField fx:id="StadtField" layoutX="208.0" layoutY="402.0" />
+      <TextField fx:id="LandField" layoutX="208.0" layoutY="440.0" />
+   </children>
+</AnchorPane>

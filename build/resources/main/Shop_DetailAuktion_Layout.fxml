@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ControllerDetailAuktion">
+    <children>
+        <Label layoutX="267.0" layoutY="20.0" text="Auktionendetails">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <Button fx:id="bt_zurueck" layoutX="41.0" layoutY="541.0" mnemonicParsing="false" onAction="#Zurueck_click" text="Zurück">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="bt_Bieten" layoutX="658.0" layoutY="541.0" mnemonicParsing="false" onAction="#Bieten_click" text="Bieten!">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Label layoutX="72.0" layoutY="118.0" text="Name">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+
+        <Label layoutX="72.0" layoutY="172.0" text="Beschreibung">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="72.0" layoutY="299.0" text="Aktueller Preis">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="72.0" layoutY="355.0" text="Mindestgebot">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="72.0" layoutY="416.0" text="Endzeitpunkt">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="72.0" layoutY="472.0" text="Versandart">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label layoutX="481.0" layoutY="102.0" text="Produktbild" />
+        <ImageView fx:id="iv_bild" fitHeight="252.0" fitWidth="200.0" layoutX="495.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@PrB_Leer.png" />
+            </image></ImageView>
+        <TextField fx:id="tf_Name" disable="true" layoutX="205.0" layoutY="119.0" />
+        <TextField fx:id="tf_Beschreibung" disable="true" layoutX="205.0" layoutY="173.0" prefHeight="101.0" prefWidth="267.0" />
+        <TextField fx:id="tf_Startpreis" disable="true" layoutX="205.0" layoutY="300.0" />
+        <TextField fx:id="tf_Mindestgebot" disable="true" layoutX="205.0" layoutY="356.0" />
+        <TextField fx:id="tf_Versandart" disable="true" layoutX="205.0" layoutY="473.0" />
+      <Label layoutX="434.0" layoutY="485.0" text="Mein Gebot" textFill="#ff00e8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_Gebot" layoutX="584.0" layoutY="486.0" />
+      <TextField fx:id="tf_endzeitpunkt" disable="true" layoutX="205.0" layoutY="417.0" />
+    </children>
+</AnchorPane>

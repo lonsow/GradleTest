@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ControllerLogin">
+   <children>
+      <Label layoutX="269.0" layoutY="141.0" prefHeight="4.0" prefWidth="262.0" text="SEP Login">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="Passwort" layoutX="426.0" layoutY="335.0"  />
+      <Button fx:id="Einloggen" layoutX="458.0" layoutY="405.0" mnemonicParsing="false" onAction="#EinloggenButton" text="Einloggen">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Username" layoutX="426.0" layoutY="276.0"  />
+      <Label layoutX="232.0" layoutY="335.0" text="Passwort">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="275.0" text="Username">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="regButton" layoutX="232.0" layoutY="405.0" mnemonicParsing="false" onAction="#regButtonAction" text="Registrieren">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
